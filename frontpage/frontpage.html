@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ</title>
     <link rel="stylesheet" href="frontpage.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="frontpage.js"></script>
 </head>
 <body>
     <h1>perguntas.....</h1>
 
-    <main>
+    <div id="main">
         <h2>Pergunta 1</h2>
         <div class="corpo">
-            <div id="perguntas">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem modi, iste fugiat aspernatur architecto nulla voluptatem, accusantium nemo, labore placeat tempora non! Omnis earum voluptates tempora unde, similique esse?</p>
-            </div>
-            <div id="respostas">
-                    <INPUT type="RADIO" name="OPCAO" value="op1"> <label>Resposta A</label>  
-                    <input type="RADIO" name="OPCAO" value="op2"> <label>Resposta B</label>  
-                    <input type="RADIO" name="OPCAO" value="op3"> <label>Resposta C</label>  
-                    <input type="RADIO" name="OPCAO" value="op4"> <label>Resposta D</label>    
-            </div> 
+                <div id="perguntas">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem modi, iste fugiat aspernatur architecto nulla voluptatem, accusantium nemo, labore placeat tempora non! Omnis earum voluptates tempora unde, similique esse?</p>
+                </div>
+                <form id="respostas">
+                        <INPUT type="RADIO" name="OPCAO" value="op1"> <label id="resposta1">Resposta A</label>  
+                        <br>
+                        <input type="RADIO" name="OPCAO" value="op2"> <label id="resposta2">Resposta B</label> 
+                        <br> 
+                        <input type="RADIO" name="OPCAO" value="op3"> <label id="resposta3">Resposta C</label>  
+                        <br>
+                        <input type="RADIO" name="OPCAO" value="op4"> <label id="resposta4">Resposta D</label>   
+                        
+                        <button type="submit" onclick="displayRadioValue()"> Confirmar</button>
+                </form> 
         </div>
-        
-        <button type="submit">Confirmar</button>
-    </main>
+
+        </div>
 </body>
 </html>
