@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ</title>
     <link rel="stylesheet" href="perfil.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="perfil.js"></script>
 </head>
 <body>
     <h1>Olá, voçe esta no quiz da tropa do baguncinha!°</h1>
@@ -14,8 +16,10 @@
         <form method="post" action="">
             <label id="text">Digite seu usuario:</label>
                 <input id="input-name" type="user" placeholder="Ex: João da silva" name="usr" autocomplete="mobile" required>
+
+                <button type="submit" onclick="salvar()">Confirmar</button>
         </form>
-            <button type="submit">Confirmar</button>
+            
     </main>
 
     
