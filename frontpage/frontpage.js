@@ -1,9 +1,5 @@
-$(function() {
-    $('#respostas').on("submit", function(e) {
-      e.preventDefault();
-      function displayRadioValue() {
-        var opcoes = document.getElementsByName('OPCAO');
+// let confirmarResposta = document.getElementById()
 
-    }
-    });
-  });
+function confirmarResposta(){
+    console.log(opc1)
+}

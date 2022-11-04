@@ -1,6 +1,7 @@
 body{
-    background: rgb(6,1,56);
-    background: linear-gradient(90deg, rgba(6,1,56,1) 0%, rgba(55,0,69,1) 100%);
+    /* background: rgb(6,1,56);
+    background: linear-gradient(90deg, rgba(6,1,56,1) 0%, rgba(55,0,69,1) 100%); */
+    background: url(/img/img.jpeg);
 }
 
 h1{
@@ -33,7 +34,7 @@ h1{
 }
 
 #main{
-    background-color: rgba(255, 255, 255, 0.304);
+    background-color: rgba(255, 255, 255, 0.582);
     padding: 5%;
     display: flex;
     margin: auto;
