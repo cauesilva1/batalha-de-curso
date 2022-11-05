@@ -13,7 +13,7 @@
             <div class="tabela">
                 <table>
                     <tr>
-                        <th></th>
+                        <th><?php ?></th>
                         <th>Pontuação</th>
                     </tr>
                     <tr>
