@@ -1,7 +1,7 @@
 body {
   /* background: rgb(6,1,56);
     background: linear-gradient(90deg, rgba(6,1,56,1) 0%, rgba(55,0,69,1) 100%); */
-  background: url(/img/img.jpeg);
+    background-image: url(../img/img.jpg);
 }
 
 h1 {
