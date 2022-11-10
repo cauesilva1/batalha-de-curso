@@ -61,8 +61,9 @@
 
       <input type="hidden" id="score" name="score">
       <input type="hidden" id="username" name="username" value=<?php echo $usr?>>
+      <!-- <input type="hidden" id="course" name="course" value=<?php echo $course?>> -->
 
-      <button type="submit">Salvar Pontuacao</button>
+      <button type="submit">Salvar Pontuação</button>
 
       <!-- <button type="button" onclick="$('#modal').hide()">Salvar Pontuacao</button> -->
     </form>

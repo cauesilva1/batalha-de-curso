@@ -1,35 +1,50 @@
+<?php
+ $conexao = mysqli_connect("localhost", "Walker", "Venula111", "login");
+
+ $consulta = "SELECT * FROM user order by score desc";
+ $con = $conexao ->query($consulta);
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rank</title>
+    <title>How to Style HTML Tables with CSS</title>
     <link rel="stylesheet" href="rankpage.css">
 </head>
 <body>
-    <main>
-        <h2>Rank de players</h2>
-            <div class="tabela">
-                <table>
-                    <tr>
-                        <th><?php ?></th>
-                        <th>Pontuação</th>
-                    </tr>
-                    <tr>
-                        <td>andre</td>
-                        <td>7/10</td>
-                    </tr>
-                    <tr>
-                        <td>lucas</td>
-                        <td>9/10</td>
-                    </tr>
-                    <tr>
-                        <td>thiago</td>
-                        <td>10/10</td>
-                    </tr>
-                </table>
-            </div>
-    </main>
+    <table class="content-table">
+        <thead>
+          <tr>
+          <th>ID</th>
+            <th>Nome</th>
+            <th>Score</th>
+            <th>Curso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php while($dado = $con->fetch_array()){ ?>
+          <tr>
+          <td><?php $dado["id"];?></td>
+            <td><?php $dado["username"];?></td>
+            <td><?php $dado["score"];?></td>
+            <td><?php $dado["course"];?></td>
+          </tr>
+
+          <?php } ?>
+          <tr class="active-row">
+           
+          </tr>
+         
+        </tbody>
+      </table>
 </body>
 </html>
