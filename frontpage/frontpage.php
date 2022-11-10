@@ -3,6 +3,7 @@
   $conexao = mysqli_connect("localhost", "Walker", "Venula111", "login");
 
   $usr = $_POST['usr'];
+  $course = $_POST['course'];
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +62,7 @@
 
       <input type="hidden" id="score" name="score">
       <input type="hidden" id="username" name="username" value=<?php echo $usr?>>
-      <!-- <input type="hidden" id="course" name="course" value=<?php echo $course?>> -->
+      <input type="hidden" id="course" name="course" value=<?php echo $course?>>
 
       <button type="submit">Salvar Pontuação</button>
 
