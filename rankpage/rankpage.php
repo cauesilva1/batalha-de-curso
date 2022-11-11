@@ -1,5 +1,5 @@
 <?php
- $conexao = mysqli_connect("localhost", "Walker", "Venula111", "login");
+ $conexao = mysqli_connect("localhost", "login", "senha", "database name");
 
  $consulta = "SELECT * FROM user order by score desc";
  $con = $conexao ->query($consulta);

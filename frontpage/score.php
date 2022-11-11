@@ -1,7 +1,7 @@
 <?php
 
 
-$pdo = new PDO('mysql:host=localhost;dbname=login', 'Walker', 'Venula111');
+$pdo = new PDO('mysql:host=localhost;dbname=', 'login', 'senha');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);;
 
     $score = $_POST['score'];
