@@ -1,7 +1,8 @@
 body{
-    /* background: rgb(6,1,56);
-    background: linear-gradient(90deg, rgba(6,1,56,1) 0%, rgba(55,0,69,1) 100%); */
-    background: url(/img/img.jpeg);
+
+    background-image: url(../img/img.jpg);
+    /* background-image: url(../img/imag.png); */
+
 }
 
 h1{
@@ -16,7 +17,7 @@ h1{
 
 main{
 
-    background-color: #fffffff1;
+    background-color: #cfbe2066;
     padding: 10%;
     display: flex;
     margin: auto;
@@ -33,7 +34,7 @@ main{
 
 #text {
     margin-bottom: 10%;
-    color: rgba(55,0,69,1);
+    color: rgb(69, 0, 0);
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: -80%;
@@ -50,7 +51,7 @@ main input {
     justify-content: center;
     margin: auto;
     border-radius: 50px;
-    border-color: linear-gradient(90deg, rgba(6,1,56,1) 0%, rgba(55,0,69,1) 100%);
+    border-color: linear-gradient(90deg, rgb(107, 13, 13) 0%, rgb(127, 11, 11) 100%);
     font-size: 90%;
     background-color: #bbb9b9bd;
     padding-left: 5%;
@@ -65,16 +66,23 @@ main button {
     display: flex;
     margin: auto;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(6,1,56,1) 0%, rgba(55,0,69,1) 100%);
+    background: linear-gradient(90deg, rgb(138, 20, 14) 0%, rgb(115, 5, 5) 100%);
     color: #ffffff;
     margin-top: 20%;
     margin-bottom: -40%;
     margin-left: 70%;
-    -webkit-transition: 0.6s;
+    /* -webkit-transition: 0.6s; */
 }
 
 main button:hover {
     opacity: 0.7;
     transition: 0.8s;
     cursor: pointer;
+}
+
+
+.caixa{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }

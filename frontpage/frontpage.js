@@ -174,6 +174,8 @@ $(async function () {
         if (quest[0].correta == button.value) {
           pontos += 10;
           document.getElementById("pontos").innerHTML = pontos;
+         let test = document.querySelector("#score").value = pontos;
+            // console.log(test);
         }
         userQuest++;
 
